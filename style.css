@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html {
+    /*cursor: url(../assets/hand.png), default;*/
+  }
+.index01 {
+    background-image: url('assets/image/background_01.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+.index02 {
+    background-image: url('assets/image/background_02.jpg');
+    background-size: cover;
+    overflow: hidden;   
+}
+@font-face {
+  font-family: 'SyneTactile-Regular';
+  src: url(assets/fonts/Syne_Tactile_web/SyneTactile-Regular.woff2);
+}
+@font-face {
+  font-family: 'Ermanita';
+  src: url(assets/fonts/Ermanita_web/ermanita.woff2);
+}
+@font-face {
+  font-family: 'Patty-Cake';
+  src: url(assets/fonts/Pattycake_web/pattycake-regular-webfont.woff);
+}
+/* *** LANDING PAGE: DESKTOP LAYOUT *** */
+.titleContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+#landing-title{
+  width: 50%;
+}
+/* *** NAVIGATION PAGE: DESKTOP LAYOUT *** */
+.grid {
+  display: grid; 
+  grid-template-rows: 30vmin 30vmin 30vmin;
+  grid-template-columns: 1fr 1fr 30vmin 30vmin 30vmin;
+  gap: 0px;
+  height: 100vh;
+  padding: 2%;
+}
+#box-0 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 3;
+  grid-column-end: 5;
+}
+#box-6 {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+#box-7 {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-row-end: 4;
+  grid-column-end: 2; 
+}
+#box-2 { /* glass: DESCRIPTION */
+  grid-row-start: 1;
+  grid-column-start: 5;
+  grid-row-end: 2;
+  grid-column-end: 6; 
+}
+#box-1 { /* chain: TICKETS */
+  grid-row-start: 2;
+  grid-column-start: 5;
+  grid-row-end: 3;
+  grid-column-end: 6;
+}
+#box-3 { /* hand: CONTACT */
+  grid-row-start: 3;
+  grid-column-start: 5;
+  grid-row-end: 4;
+  grid-column-end: 6;
+}
+#box-4 { /* key: RULES */
+  grid-row-start: 3;
+  grid-column-start: 4;
+  grid-row-end: 4;
+  grid-column-end: 5;  
+}
+#box-5 { /* paper: LINE-UP */
+  grid-row-start: 3;
+  grid-column-start: 3;
+  grid-row-end: 4;
+  grid-column-end: 4; 
+}
+/*  navigation menu */
+.iconContainer {
+  display: flex;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iconBtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  margin-top: -10px;
+}
+.iconImg {
+  min-width: 50%;
+  margin-top: -10px;
+  z-index: 3;
+}
+.iconImg:hover{
+  filter: brightness(0%);
+}
+.iconShadow {
+  position: absolute;
+  display: inline-block;
+  min-width: 60%;
+  margin-top: -10px;
+  margin-left:-5px;
+  z-index: 2;
+}
+.iconCaption {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 140px;
+  min-height: 26px;
+  bottom: 0;
+  z-index: 4;
+
+  font-family: 'SyneTactile-Regular';
+  color: #000000;
+
+  background-color: #3b6567;
+  border-radius: 50%;
+  border: 1px solid #000000;
+}
+/* pop-up windows */
+.windowContainer {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: nowrap;
+  width: 95vw;
+  height: 93vh;
+  gap: 1%;
+}
+.windowContainer #popUp4{
+  gap: 4%;
+}
+.popUp{
+  padding: 2%;
+  z-index:5;
+}
+.popUp.v2 {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.popUp2 #text{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5vh;
+  width: 40vmin;
+  margin-left: 2.5vh;
+
+  font-family: 'Ermanita';
+  font-size: 1.5em;
+  color: #000000;
+}
+.popUp.v2 img {
+  width: 45vmin;
+}
+#popUp2-4 img {
+  height: 75vmin;
+}
+#popUp2-3 #text{
+  margin-top: 10vh;
+}
+#popUp2-4 #text{
+  margin-top: 9vh;
+}
+.popUp2 h2{
+  font-size: 1.2em;
+  padding-bottom: 2.5vh;
+}
+.popUp2 p{
+  margin-top: 10px;
+}
+#txt-location{
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  font-family: 'Courier New';
+  font-size: 2.2vh;
+}
+#txt-dj{
+  font-size: 0.8em;
+}
+#txt-space{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2px;
+  font-family: 'Courier New';
+  font-size: 2.2vh;
+}
+.popUp.v1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  max-height: 80vh;
+  z-index: 5;
+
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.726);
+  background-blend-mode: overlay;
+  border-image-repeat: stretch;
+  border-image-slice: 30;
+  border-image-width: 20px;
+  border-image-outset: 10px;
+
+  overflow-x: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+#popUp1{
+  max-width: 35vw;
+  border-image-source: url('assets/image/frame1.png');  
+ }
+#popUp3{
+  max-width: 35vw;
+  border-image-source: url('assets/image/frame2.png');  
+ }
+#popUp4{
+  border-image-source: url('assets/image/frame3.png');  
+ }
+.popUp.v1 span{
+  color: #cd0000; 
+}
+.popUp.v1 a{
+  color: #4bbcc2;
+}
+.popUp.v1 #text{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: 3;
+}
+.popUp.v1 h2{
+  text-align: center;
+  width: 250px;
+  margin-left:0;
+  margin-right:0;
+  padding: 3%;
+
+  background-color: #e5d7c2;
+  border: 1px solid #000000;
+  border-radius: 50%;
+
+  font-family: 'Ermanita';
+  font-size: 1.5em;
+  color: #000000;
+}
+.popUp.v1 p{
+  font-family: 'SyneTactile-Regular';
+  font-size: 1.2em;
+  color: #ffffff;
+  text-align: left;
+  margin-top: 2%;
+}
+.popUp.v1 ul{
+  font-family: 'SyneTactile-Regular';
+  font-size: 1.1em;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 3%;
+}
+#popUp4 p{
+  text-align: center;
+}
+#date{
+  display: block;
+  font-family: 'Courier';
+  color: #85e5ea;
+  font-size: 0.9em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+#link{
+  font-family: 'Courier';
+  color: #85e5ea;
+  font-size: 1em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+#rules-btn{
+  color: #cd0000; 
+  text-decoration: underline;
+}
+
+/* *** LANDING PAGE: MEDIA LAYOUT *** */
+
+/* *** NAV PAGE: MEDIA LAYOUT *** 
+@media screen and (max-width: 1000px) {
+  .grid{
+    display: none;
+  }
+  .nav-mobile{
+    display: block;
+    height: 100vh;
+  }
+}*/
