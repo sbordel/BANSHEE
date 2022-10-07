@@ -510,7 +510,7 @@ body {
     display: block;
     text-align: center;
     height: 100vh;
-    overflow-x: scroll;
+    overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
     background-color: #00000060;
@@ -587,7 +587,7 @@ body {
   }
 
   .text-mobile p {
-    text-align: left;
+    text-align: center;
   }
 
   .text-mobile h4 {
@@ -624,8 +624,8 @@ body {
     font-weight: normal;
     text-align: left;
     background-color: #00000000;
-  }
-
+  } 
+  
   .text-mobile.v2 {
     justify-content: center;
     align-items: center;
