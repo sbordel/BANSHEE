@@ -6,7 +6,7 @@ $(document).ready(function () {
         iconAudio[i].src = "assets/sounds/sound_" + i + ".mp3";
     }
     $(".index01").click(function () {
-        window.location.href = "banshee_/navigation-en.html";
+        window.location.href = "navigation-en.html";
     });
     $(".bg-overlay").click(function () {
         $(".bg-overlay").css("display", "none");

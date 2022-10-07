@@ -45,8 +45,9 @@ body {
 }
 
 #landing-title {
+  position: absolute;
   width: 90%;
-  bottom: 0;
+  bottom: 0px;
 }
 
 /* *** NAVIGATION PAGE: DESKTOP LAYOUT *** */
