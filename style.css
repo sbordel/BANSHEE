@@ -312,8 +312,12 @@ body {
 }
 
 #popUp2-1 p,
-#popUp2-2 p {
+#popUp2-2 p{
   margin-bottom: 15px;
+}
+
+#popUp2-3 p{
+  margin-bottom: 25px;
 }
 
 #txt-location {
