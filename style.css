@@ -303,6 +303,11 @@ body {
   text-decoration: line-through;
 }
 
+#popUp2-3 h2 {
+  margin-top: 0vh;
+  margin-bottom: 0px;
+}
+
 .popUp2 p {
   margin-top: 0.5vh;
   text-shadow: 3px 3px 15px #4a7e80c1;
@@ -317,7 +322,7 @@ body {
 }
 
 #popUp2-3 p{
-  margin-bottom: 25px;
+  margin-bottom: 2px;
 }
 
 #txt-location {
@@ -339,6 +344,19 @@ body {
 
 #txt-dj {
   font-size: 17px;
+}
+
+#txt-sub {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.2vh;
+
+  font-family: 'Courier New';
+  font-size: 15px;
+  font-weight: 500;
+  color: #c00000;
+  text-shadow: 1px 1px 5px #ffffff;
 }
 
 #txt-space {
@@ -646,10 +664,6 @@ body {
 
   .container-paper img {
     width: 400px;
-  }
-
-  .container-paper #p3 {
-    width: 330px;
   }
 
   .container-paper #p4 {
